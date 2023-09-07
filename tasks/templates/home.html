@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Bienvenidos a TaskNote+</h1>
+        <p>
+            TaskNote+ es la aplicación definitiva para ayudarte a mantener un registro organizado de tus tareas y notas diarias. Diseñada para la máxima eficiencia y facilidad de uso, esta aplicación es tu compañera perfecta para gestionar tu vida de manera más productiva y mantener un control completo sobre tus responsabilidades y pensamientos.
+            <ul>
+                Características Principales
+
+            <li>Registro de Usuarios: TaskNote+ permite a los usuarios crear una cuenta personalizada, lo que les brinda la ventaja de acceder a sus tareas y notas desde cualquier dispositivo y mantener sus datos seguros.</li>
+            <li>Inicio de Sesión Seguro: La aplicación garantiza la seguridad de los datos mediante un sólido sistema de inicio de sesión con autenticación.</li>
+            <li>Creación de Tareas y Notas: Con TaskNote+, puedes crear tareas y notas de manera sencilla. Cada entrada puede tener un título descriptivo y una amplia descripción para proporcionar detalles adicionales.</li>
+            <li>Organización Intuitiva: La interfaz de usuario intuitiva y amigable te permite organizar tus tareas y notas en listas personalizadas, etiquetas o categorías para que puedas acceder rápidamente a lo que necesitas.</li>
+            <li>Priorización y Fechas Límite: Clasifica tus tareas por nivel de importancia y establece fechas límite para mantenerte en el camino correcto.</li>
+            </ul>
+        </p>
+        <div class="text-center">
+            <a class="btn btn-info" href="{% url 'signin' %}">
+                Signin
+            </a>
+            <a class="btn btn-info" href="{% url 'signup' %}">
+                Signup
+            </a>
+        </div>
+        
+    </section>
+</main>
+
+
+{% endblock %}
